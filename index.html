@@ -21,7 +21,7 @@
             <form>
                 <div class="billAmount">
                     <label for="billAmount">Bill Amount: $</label>
-                    <input type="number" name="billAmount" id="billAmount">
+                    <input type="number" name="billAmount" id="billAmount" min="00.00">
                 </div>
     
                 <div class="tipPercent">
@@ -37,7 +37,7 @@
                 <button type="submit" id="submit" class="button">Calculate Tip!</button>
             </form>
         </div>
-        <div class="results">
+        <div class="results" id="results">
             <div class="tipTotal">
                 <h2>Tip: <span id="tipAmount"></span></h2>
                 <h2>Total: <span id="totalBill"></span></h2>
@@ -45,5 +45,6 @@
         </div>
     </div>
 
+    <script src="./assets/script.js"></script>
 </body>
 </html>
